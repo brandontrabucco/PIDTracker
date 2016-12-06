@@ -1,27 +1,17 @@
-﻿@{
-    Layout = null;
-}
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head prefix="og: http://ogp.me/ns/website#">
     <meta charset="utf-8" />
     <meta property="og:title" content="PID Tracker | Brandon Trabucco" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.brandontrabucco.com/pid" />
-    <meta property="og:image" content="@Url.Content("~/Assets/web-thumb.png")" />
+    <meta property="og:url" content="http://brandontrabucco.github.io/pid" />
     <meta property="og:description" content="This is an example PID Feedback Loop that tracks the mouse cursor on the screen." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="copyright" content="Copyright &copy; @DateTime.Now.Year Brandon Trabucco" />
+    <meta name="copyright" content="Copyright &copy; 2016 Brandon Trabucco" />
     <meta name="description" content="This is an example PID Feedback Loop that tracks the mouse cursor on the screen." />
     <meta name="keywords" content="engineer, software, Brandon, Trabucco, Brandon Trabucco, Oregon, Javascript, Code, Tracking, PID, Porportional, Integral, Derivative, Feedback Loop" />
     <meta name="robots" content="index, follow" />
     <title>PID Tracker | Brandon Trabucco</title>
-    <link rel="shortcut icon" href="@Url.Content("~/Assets/favicon.png")" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
 </head>
 <body class="pid-body">
 
@@ -36,7 +26,7 @@
     <div id="pid-kd" class="pid-input"><span>D: &nbsp </span><input name="pid-kd" type="text" value=".0095" /></div>
 
 
-    <script type="text/javascript" src="@Url.Content("~/Scripts/pid.js")"></script>
+    <script type="text/javascript" src="pid.js"></script>
 </body>
 </html>
 
